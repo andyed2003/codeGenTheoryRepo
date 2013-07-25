@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.theory.core.theoryRoot org.eventb.core.comment="  " org.eventb.core.configuration="org.eventb.codegen.theory.translator.core.thyTranslator">
+<org.eventb.codegen.theory.translator.core.translatorElement name="(" org.eventb.codegen.theory.translator.core.targetLanguage="Java">
+<org.eventb.codegen.theory.translator.core.translatorRuleElement name="'" org.eventb.codegen.theory.translator.core.formula="JSet_getter(s)" org.eventb.codegen.theory.translator.core.translationElement="s.get()" org.eventb.core.label="trns1"/>
+<org.eventb.theory.core.metaVariable name="(" org.eventb.core.identifier="s" org.eventb.theory.core.type="JSet(S)"/>
+<org.eventb.codegen.theory.translator.core.translatorTypeRuleElement name=")" org.eventb.codegen.theory.translator.core.translationElement="MySetImpl&lt;S&gt;" org.eventb.codegen.theory.translator.core.typeFormula="JSet(S)" org.eventb.core.label="typeTrns1"/>
+<org.eventb.codegen.theory.translator.core.translatorRuleElement name="*" org.eventb.codegen.theory.translator.core.formula="JSet(S)" org.eventb.codegen.theory.translator.core.translationElement="new MySetImpl(S)" org.eventb.core.label="trns2"/>
+</org.eventb.codegen.theory.translator.core.translatorElement>
+<org.eventb.theory.core.typeParameter name="+" org.eventb.core.identifier="S"/>
+<org.eventb.theory.core.newOperatorDefinition name="-" org.eventb.core.label="aSet_getter1" org.eventb.theory.core.associative="false" org.eventb.theory.core.commutative="false" org.eventb.theory.core.formulaType="true" org.eventb.theory.core.notationType="PREFIX">
+<org.eventb.theory.core.directOperatorDefinition name="'" org.eventb.theory.core.formula="ℙ(s)"/>
+<org.eventb.theory.core.operatorArgument name="(" org.eventb.core.expression="ℙ(S)" org.eventb.core.identifier="s"/>
+</org.eventb.theory.core.newOperatorDefinition>
+<org.eventb.theory.core.newOperatorDefinition name="." org.eventb.core.label="aSet_getter2" org.eventb.theory.core.associative="false" org.eventb.theory.core.commutative="false" org.eventb.theory.core.formulaType="true" org.eventb.theory.core.notationType="PREFIX">
+<org.eventb.theory.core.operatorArgument name="'" org.eventb.core.expression="S" org.eventb.core.identifier="s"/>
+<org.eventb.theory.core.directOperatorDefinition name="(" org.eventb.theory.core.formula="s"/>
+</org.eventb.theory.core.newOperatorDefinition>
+<org.eventb.theory.core.datatypeDefinition name="/" org.eventb.core.comment="A JSet (Java) of some elements S" org.eventb.core.identifier="JSet">
+<org.eventb.theory.core.typeArgument name="'" org.eventb.theory.core.givenType="S"/>
+<org.eventb.theory.core.datatypeConstructor name="(" org.eventb.core.comment="The type of cons is JSet(S)" org.eventb.core.identifier="cons"/>
+</org.eventb.theory.core.datatypeDefinition>
+<org.eventb.theory.core.newOperatorDefinition name="0" org.eventb.core.comment="Get an element of the JSet of type S" org.eventb.core.label="JSet_getter" org.eventb.theory.core.associative="false" org.eventb.theory.core.commutative="false" org.eventb.theory.core.formulaType="true" org.eventb.theory.core.notationType="PREFIX">
+<org.eventb.theory.core.operatorArgument name="'" org.eventb.core.comment="the arg s passed to the getter is in the set JSet(S), i.e. POW(S)" org.eventb.core.expression="JSet(S)" org.eventb.core.identifier="s"/>
+<org.eventb.theory.core.directOperatorDefinition name="(" org.eventb.core.comment="the result is one element of S " org.eventb.theory.core.formula="S"/>
+</org.eventb.theory.core.newOperatorDefinition>
+</org.eventb.theory.core.theoryRoot>

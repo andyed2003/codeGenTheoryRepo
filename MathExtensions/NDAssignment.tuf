@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.theory.core.theoryRoot org.eventb.core.comment=" " org.eventb.core.configuration="org.eventb.codegen.theory.translator.core.thyTranslator">
+<org.eventb.codegen.theory.translator.core.translatorElement name="'" org.eventb.codegen.theory.translator.core.targetLanguage="Java">
+<org.eventb.codegen.theory.translator.core.translatorRuleElement name="'" org.eventb.codegen.theory.translator.core.formula="c :∈ z" org.eventb.codegen.theory.translator.core.translationElement="c = z" org.eventb.core.label="trns1"/>
+<org.eventb.theory.core.metaVariable name="+" org.eventb.core.identifier="b" org.eventb.theory.core.type="S "/>
+<org.eventb.theory.core.metaVariable name="(" org.eventb.core.identifier="c" org.eventb.theory.core.type="S"/>
+<org.eventb.theory.core.metaVariable name=")" org.eventb.core.identifier="z" org.eventb.theory.core.type="ℙ(S)"/>
+<org.eventb.codegen.theory.translator.core.translatorRuleElement name="*" org.eventb.codegen.theory.translator.core.formula="get( b )" org.eventb.codegen.theory.translator.core.translationElement="get( b )" org.eventb.core.label="trns2"/>
+</org.eventb.codegen.theory.translator.core.translatorElement>
+<org.eventb.theory.core.typeParameter name="(" org.eventb.core.identifier="S"/>
+<org.eventb.theory.core.newOperatorDefinition name=")" org.eventb.core.label="get" org.eventb.theory.core.associative="false" org.eventb.theory.core.commutative="false" org.eventb.theory.core.formulaType="true" org.eventb.theory.core.notationType="PREFIX">
+<org.eventb.theory.core.operatorArgument name="'" org.eventb.core.expression="S" org.eventb.core.identifier="b"/>
+<org.eventb.theory.core.directOperatorDefinition name="(" org.eventb.theory.core.formula="S"/>
+</org.eventb.theory.core.newOperatorDefinition>
+<org.eventb.theory.core.importTheory name="+" org.eventb.theory.core.importTheory="/MathExtensions/f2.tcf|org.eventb.theory.core.scTheoryRoot#f2"/>
+</org.eventb.theory.core.theoryRoot>

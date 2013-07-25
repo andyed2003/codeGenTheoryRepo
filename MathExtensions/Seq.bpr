@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="seqSize/Op-WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="s" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees s)" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="s∈seq(A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈ℤ × ℙ(ℤ × A)⇒(s∈seq(A)⇒s∈dom(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∧(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈seq(A)⇒(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈ℤ × ℙ(ℤ × A)⇒(s∈seq(A)⇒s∈ℤ × ℙ(ℤ × A)∧(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="s∈seq(A)⇒(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·⊤⇒(s∈seq(A)⇒⊤∧(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ)"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="seqHead/Op-WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="s" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees s)" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p5,p6">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p9"/>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p10"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="s∈seq(A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈ℤ × ℙ(ℤ × A)⇒(s∈seq(A)∧(s∈seq(A)∧¬seqIsEmpty(s))⇒s∈dom(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈seq(A)∧¬seqIsEmpty(s)⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·⊤⇒(s∈seq(A)∧¬seqIsEmpty(s)⇒⊤∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈ℤ × ℙ(ℤ × A)⇒(s∈seq(A)∧¬seqIsEmpty(s)⇒s∈ℤ × ℙ(ℤ × A)∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="s∈seq(A)∧¬seqIsEmpty(s)⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬seqIsEmpty(s)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="seqTail/Op-WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="s,i" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees s)" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p5,p6">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8"/>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees i)" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+<org.eventb.core.prIdent name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p11">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p14"/>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p15"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="i+1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))">
+<org.eventb.core.prIdent name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="s∈seq(A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="s∈seq(A)∧(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ∧(∀i⦂ℤ·i∈1 ‥ (prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))(s) − 1⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i+1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i+1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈ℤ × ℙ(ℤ × A)⇒(s∈seq(A)∧(s∈seq(A)∧¬seqIsEmpty(s))⇒s∈seq(A)∧(∀i⦂ℤ·s∈dom(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∧(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ∧(i∈1 ‥ (prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))(s) − 1⇒s∈dom(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i+1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A)))"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="i∈1 ‥ (prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))(s) − 1⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i+1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·⊤⇒(s∈seq(A)∧¬seqIsEmpty(s)⇒s∈seq(A)∧⊤∧(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ∧(∀i⦂ℤ·i∈1 ‥ (prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))(s) − 1⇒⊤∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i+1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A))"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬seqIsEmpty(s)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="s∈seq(A)∧¬seqIsEmpty(s)⇒s∈seq(A)∧(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ∧(∀i⦂ℤ·i∈1 ‥ (prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))(s) − 1⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i+1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀i⦂ℤ·i∈1 ‥ (prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))(s) − 1⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i+1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="i∈1 ‥ (prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))(s) − 1">
+<org.eventb.core.prIdent name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈seq(A)∧¬seqIsEmpty(s)⇒s∈seq(A)∧(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ∧(∀i⦂ℤ·i∈1 ‥ (prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))(s) − 1⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i+1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈ℤ × ℙ(ℤ × A)⇒(s∈seq(A)∧¬seqIsEmpty(s)⇒s∈seq(A)∧s∈ℤ × ℙ(ℤ × A)∧(prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))∈ℤ × ℙ(ℤ × A) ⇸ ℤ∧(∀i⦂ℤ·i∈1 ‥ (prj1 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℤ))(s) − 1⇒s∈ℤ × ℙ(ℤ × A)∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i+1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A))"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="seqPrepend/Op-WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="s,i" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees s)" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p5">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p7">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees i)" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prIdent name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p9">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p12"/>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p13"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="s∈seq(A)∧(∀i⦂ℤ·i∈2 ‥ seqSize(s)+1⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i − 1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i − 1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="s∈seq(A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A),e⦂A·s∈ℤ × ℙ(ℤ × A)∧e∈A⇒(s∈seq(A)⇒s∈seq(A)∧(∀i⦂ℤ·i∈2 ‥ seqSize(s)+1⇒s∈dom(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i − 1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A))"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀i⦂ℤ·i∈2 ‥ seqSize(s)+1⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i − 1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A),e⦂A·s∈ℤ × ℙ(ℤ × A)∧e∈A⇒(s∈seq(A)⇒s∈seq(A)∧(∀i⦂ℤ·i∈2 ‥ seqSize(s)+1⇒s∈ℤ × ℙ(ℤ × A)∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i − 1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A))"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·⊤∧⊤⇒(s∈seq(A)⇒s∈seq(A)∧(∀i⦂ℤ·i∈2 ‥ seqSize(s)+1⇒⊤∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i − 1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A))"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈seq(A)⇒s∈seq(A)∧(∀i⦂ℤ·i∈2 ‥ seqSize(s)+1⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i − 1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="i∈2 ‥ seqSize(s)+1⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i − 1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A">
+<org.eventb.core.prIdent name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="s∈seq(A)⇒s∈seq(A)∧(∀i⦂ℤ·i∈2 ‥ seqSize(s)+1⇒(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)∧i − 1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s)∈ℤ ⇸ A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="i∈2 ‥ seqSize(s)+1">
+<org.eventb.core.prIdent name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="i − 1∈dom((prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))(s))">
+<org.eventb.core.prIdent name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="seqAppend/Op-WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="s" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees s)" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p5">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p7"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·s∈seq(A)⇒s∈seq(A)∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="s∈seq(A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A),e⦂A·s∈ℤ × ℙ(ℤ × A)∧e∈A⇒(s∈seq(A)⇒s∈seq(A)∧s∈dom(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A))"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="s∈seq(A)⇒s∈seq(A)∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A),e⦂A·s∈ℤ × ℙ(ℤ × A)∧e∈A⇒(s∈seq(A)⇒s∈seq(A)∧s∈ℤ × ℙ(ℤ × A)∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A))"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="s∈seq(A)∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="ℤ×ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀s⦂ℤ×ℙ(ℤ×A)·⊤∧⊤⇒(s∈seq(A)⇒s∈seq(A)∧⊤∧(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A))"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="(prj2 ⦂ ℙ(ℤ×ℙ(ℤ×A)×ℙ(ℤ×A)))∈ℤ × ℙ(ℤ × A) ⇸ ℙ(ℤ × A)"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="seqsIsFinite /S-THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="f,a,n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n,f,a)" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·⊤∧n ↦ f∈seq(a)⇒finite(f)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="finite(f)">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·a⊆A∧n ↦ f∈seq(a)⇒finite(f)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="n ↦ f∈seq(a)⇒finite(f)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="n ↦ f∈seq(a)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·n ↦ f∈seq(a)⇒finite(f)"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="seqsMonotone/S-THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="f,b,a,n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n,f,a,b)" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p4,p5"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="n ↦ f∈seq(b)">
+<org.eventb.core.prIdent name="b" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A),b⦂ℙ(A)·a⊆A∧n ↦ f∈seq(a)∧a⊆b⇒n ↦ f∈seq(b)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A),b⦂ℙ(A)·⊤∧n ↦ f∈seq(a)∧a⊆b⇒n ↦ f∈seq(b)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="n ↦ f∈seq(a)∧a⊆b⇒n ↦ f∈seq(b)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A),b⦂ℙ(A)·n ↦ f∈seq(a)∧a⊆b⇒n ↦ f∈seq(b)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="a⊆b">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="ℙ(A)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="n ↦ f∈seq(a)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="tailSeqIsSeq/S-THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="f,a,n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n,f,a)" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p4,p5"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="seqTail(n ↦ f)∈seq(a)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·n ↦ f∈seq(a)∧¬seqIsEmpty(n ↦ f)⇒seqTail(n ↦ f)∈seq(a)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬seqIsEmpty(n ↦ f)">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·⊤∧n ↦ f∈seq(a)∧¬seqIsEmpty(n ↦ f)⇒seqTail(n ↦ f)∈seq(a)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·a⊆A∧n ↦ f∈seq(a)∧¬seqIsEmpty(n ↦ f)⇒seqTail(n ↦ f)∈seq(a)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="n ↦ f∈seq(a)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="n ↦ f∈seq(a)∧¬seqIsEmpty(n ↦ f)⇒seqTail(n ↦ f)∈seq(a)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="tailSeqIsSeq/WD-THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="f,a,n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n,f,a)" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="n ↦ f∈seq(a)⇒n ↦ f∈seq(A)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·n ↦ f∈seq(a)⇒n ↦ f∈seq(A)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="n ↦ f∈seq(A)">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·⊤∧n ↦ f∈seq(a)⇒n ↦ f∈seq(A)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·a⊆A∧n ↦ f∈seq(a)⇒n ↦ f∈seq(A)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="n ↦ f∈seq(a)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="seqPrependIsSeq/S-THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="f,e,a,n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n,f,a,e)" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="e" org.eventb.core.type="A"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="n ↦ f∈seq(a)⇒seqPrepend(n ↦ f,e)∈seq(a∪{e})">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="e" org.eventb.core.type="A"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="seqPrepend(n ↦ f,e)∈seq(a∪{e})">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="e" org.eventb.core.type="A"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A),e⦂A·⊤∧n ↦ f∈seq(a)⇒seqPrepend(n ↦ f,e)∈seq(a∪{e})"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A),e⦂A·n ↦ f∈seq(a)⇒seqPrepend(n ↦ f,e)∈seq(a∪{e})"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A),e⦂A·a⊆A∧n ↦ f∈seq(a)⇒seqPrepend(n ↦ f,e)∈seq(a∪{e})"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="n ↦ f∈seq(a)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="seqPrependIsSeq/WD-THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="f,a,n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n,f,a)" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="n ↦ f∈seq(a)⇒n ↦ f∈seq(A)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·n ↦ f∈seq(a)⇒n ↦ f∈seq(A)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="n ↦ f∈seq(A)">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·⊤∧n ↦ f∈seq(a)⇒n ↦ f∈seq(A)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·a⊆A∧n ↦ f∈seq(a)⇒n ↦ f∈seq(A)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="n ↦ f∈seq(a)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="seqAppendIsSeq/S-THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="f,e,a,n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n,f,a,e)" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="e" org.eventb.core.type="A"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="seqAppend(n ↦ f,e)∈seq(a∪{e})">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="e" org.eventb.core.type="A"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A),e⦂A·a⊆A∧n ↦ f∈seq(a)⇒seqAppend(n ↦ f,e)∈seq(a∪{e})"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="n ↦ f∈seq(a)⇒seqAppend(n ↦ f,e)∈seq(a∪{e})">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="e" org.eventb.core.type="A"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A),e⦂A·n ↦ f∈seq(a)⇒seqAppend(n ↦ f,e)∈seq(a∪{e})"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A),e⦂A·⊤∧n ↦ f∈seq(a)⇒seqAppend(n ↦ f,e)∈seq(a∪{e})"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="n ↦ f∈seq(a)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="seqAppendIsSeq/WD-THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="f,a,n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="A">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n,f,a)" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="n ↦ f∈seq(a)⇒n ↦ f∈seq(A)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·n ↦ f∈seq(a)⇒n ↦ f∈seq(A)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="n ↦ f∈seq(A)">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·⊤∧n ↦ f∈seq(a)⇒n ↦ f∈seq(A)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀n⦂ℤ,f⦂ℙ(ℤ×A),a⦂ℙ(A)·a⊆A∧n ↦ f∈seq(a)⇒n ↦ f∈seq(A)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="n ↦ f∈seq(a)">
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ℙ(A)"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℙ(ℤ×A)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>
