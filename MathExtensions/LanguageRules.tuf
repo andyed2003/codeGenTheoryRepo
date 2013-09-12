@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.theory.core.theoryRoot org.eventb.core.comment="   " org.eventb.core.configuration="org.eventb.codegen.theory.translator.core.thyTranslator">
+<org.eventb.theory.core.theoryRoot org.eventb.core.comment=" " org.eventb.core.configuration="org.eventb.codegen.theory.translator.core.thyTranslator">
 <org.eventb.theory.core.typeParameter name="(" org.eventb.core.identifier="Q"/>
 <org.eventb.codegen.theory.translator.core.translatorElement name="*" org.eventb.codegen.theory.translator.core.targetLanguage="Ada">
 <org.eventb.theory.core.metaVariable name="'" org.eventb.core.identifier="a" org.eventb.theory.core.type="ℤ "/>

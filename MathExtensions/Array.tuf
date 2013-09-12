@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.theory.core.theoryRoot org.eventb.core.comment=" " org.eventb.core.configuration="org.eventb.codegen.theory.translator.core.thyTranslator">
+<org.eventb.theory.core.theoryRoot org.eventb.core.comment="  " org.eventb.core.configuration="org.eventb.codegen.theory.translator.core.thyTranslator">
 <org.eventb.theory.core.typeParameter name="'" org.eventb.core.identifier="T"/>
 <org.eventb.theory.core.newOperatorDefinition name="(" org.eventb.core.label="array" org.eventb.theory.core.associative="false" org.eventb.theory.core.commutative="false" org.eventb.theory.core.formulaType="true" org.eventb.theory.core.notationType="PREFIX">
 <org.eventb.theory.core.operatorArgument name="'" org.eventb.core.expression="ℙ(T)" org.eventb.core.identifier="s"/>
