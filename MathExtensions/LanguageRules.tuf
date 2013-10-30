@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.theory.core.theoryRoot org.eventb.core.comment=" " org.eventb.core.configuration="org.eventb.codegen.theory.translator.core.thyTranslator">
+<org.eventb.theory.core.theoryRoot org.eventb.core.configuration="org.eventb.codegen.theory.translator.core.thyTranslator">
 <org.eventb.theory.core.typeParameter name="(" org.eventb.core.identifier="Q"/>
 <org.eventb.codegen.theory.translator.core.translatorElement name="*" org.eventb.codegen.theory.translator.core.targetLanguage="Ada">
 <org.eventb.theory.core.metaVariable name="'" org.eventb.core.identifier="a" org.eventb.theory.core.type="ℤ "/>
@@ -42,8 +42,8 @@
 <org.eventb.codegen.theory.translator.core.translatorRuleElement name="5" org.eventb.codegen.theory.translator.core.formula="a ∗ b" org.eventb.codegen.theory.translator.core.translationElement="a * b" org.eventb.core.label="trns4"/>
 <org.eventb.codegen.theory.translator.core.translatorRuleElement name="9" org.eventb.codegen.theory.translator.core.formula="c = d" org.eventb.codegen.theory.translator.core.translationElement="c == d" org.eventb.core.label="trns5"/>
 <org.eventb.codegen.theory.translator.core.translatorRuleElement name=":" org.eventb.codegen.theory.translator.core.formula="a ≔ b" org.eventb.codegen.theory.translator.core.translationElement="a = b" org.eventb.core.label="trns6"/>
-<org.eventb.codegen.theory.translator.core.translatorRuleElement name=";" org.eventb.codegen.theory.translator.core.formula="FALSE" org.eventb.codegen.theory.translator.core.translationElement="FALSE" org.eventb.core.comment="" org.eventb.core.label="trns7"/>
-<org.eventb.codegen.theory.translator.core.translatorRuleElement name="=" org.eventb.codegen.theory.translator.core.formula="TRUE" org.eventb.codegen.theory.translator.core.translationElement="TRUE" org.eventb.core.label="trns8"/>
+<org.eventb.codegen.theory.translator.core.translatorRuleElement name=";" org.eventb.codegen.theory.translator.core.formula="FALSE" org.eventb.codegen.theory.translator.core.translationElement="fmiFalse" org.eventb.core.comment="" org.eventb.core.label="trns7"/>
+<org.eventb.codegen.theory.translator.core.translatorRuleElement name="=" org.eventb.codegen.theory.translator.core.formula="TRUE" org.eventb.codegen.theory.translator.core.translationElement="fmiTrue" org.eventb.core.label="trns8"/>
 <org.eventb.codegen.theory.translator.core.translatorRuleElement name="&gt;" org.eventb.codegen.theory.translator.core.formula="c ≔ d" org.eventb.codegen.theory.translator.core.translationElement="c = d" org.eventb.core.label="trns9"/>
 <org.eventb.codegen.theory.translator.core.translatorRuleElement name="?" org.eventb.codegen.theory.translator.core.formula="a = b" org.eventb.codegen.theory.translator.core.translationElement="a == b" org.eventb.core.label="trns10"/>
 <org.eventb.codegen.theory.translator.core.translatorTypeRuleElement name="M" org.eventb.codegen.theory.translator.core.translationElement="int" org.eventb.codegen.theory.translator.core.typeFormula="ℤ " org.eventb.core.label="typeTrns1"/>
